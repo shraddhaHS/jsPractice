@@ -20,8 +20,14 @@ const balance = new Number(22)
 // //ceil top round off value dene ke liye nd floor lower wali
 // console.log(Math.ceil(4.1))
 // console.log(Math.floor(4.6))
-console.log(Math.random()) 
-console.log(Math.random()*10) 
+console.log(Math.random()) // 0-1 ke beechke  values deta h
+console.log((Math.random()*1000)+1) // jis bhi number se multiply kr rhe hain values uss hi range mai aaegi suppose 10 se kia toh values 0-10 ke beech aaegi bs
+const min = 10
+const max = 20
+//formula/trick
+console.log(Math.floor(Math.random()*(max-min+1))+min) // jb range ke beech mai chahiye hota h 
+
+
 
 
 
