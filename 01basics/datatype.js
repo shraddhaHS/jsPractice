@@ -65,3 +65,23 @@ const myFunction = function(){
 console.log("hello earth")
 }
  console.log(typeof myFunction) // return object function reference wale mai sbka type object hi aata hai
+
+ //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ //stack(primitive/copy of the value ) & heap memory(non primitive/call by reference)
+let myName = "shradha"
+let anotherName = myName
+anotherName = "shrads"
+console.log(anotherName)
+console.log(myName)
+
+//non primitive heap memory 
+let user1 = {
+    //objects
+    email:"user@google.com",
+    upi: "user@ybl"
+}
+let user2 = user1
+user2.email = "ssb$gmail.com"
+console.log(user1.email,user2.email)
+//dono change ho jaenge bcoz original address pe jo value thi wahi change hui hai
