@@ -7,8 +7,8 @@
 //         break;
 // }
 
-
-// when BREAK is used the code below it will still be executed but the default statement wont be executed
+// break causes the switch statement to end its execution immediately and to transfer control to the code after the switch statement's closing brace ( } ). This behavior can be used to match and ignore one or more cases in a switch statement.
+// when BREAK is used the code below it wont  be executed once we get a output
 const month = 3
 switch(month){
     case 1:
@@ -19,10 +19,10 @@ switch(month){
         break;
     case 3:
         console.log("mar")
-        break;
+       
     case 4:
         console.log("apr")
-        break;
+      
     default:
         console.log("doesnt match")
         break;
