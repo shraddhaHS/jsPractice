@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>shraddha js</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+   let intervalId 
+const start = document.getElementById('start').addEventListener('click',function(){ 
+  intervalId = setInterval(function(){
+    console.log("meow meow")
+  },1000)     
+})
+const stop = document.getElementById('stop').addEventListener('click',function(){
+    clearInterval(intervalId)
+})
+
+// const sayDate = function(str){
+//     console.log("str",Date.now())
+// } 
+// // setInterval(sayDate,1000,"hi")
+// //how to make it stop
+// const intervalId = setInterval(sayDate,1000,"hi")
+// clearInterval(intervalId)
+</script>
+</html>
