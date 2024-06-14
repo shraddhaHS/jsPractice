@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+<!-- 0	UNSENT	Client has been created. open() not called yet.
+1	OPENED	open() has been called.
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	LOADING	Downloading; responseText holds partial data.
+4	DONE	The operation is complete. -->
+</body>
+<script>
+  //ajax/xml
+  //xml http request
+const requestUrl = "https://api.github.com/users/hiteshchoudhary"
+  const xhr = new XMLHttpRequest()
+  xhr.open('GET',requestUrl)
+  xhr.onreadystatechange = function(){
+    console.log(xhr.readyState)
+    if(xhr.readyState === 4){
+        //JSON . parse is used to convert string into objects just like we use to do it in js by uing Number or Object
+        const data = JSON.parse(this.responseText)
+        console.log(typeof data)//datatype of data is string so we will get undefined as output when we try to run the code below.. but we will convert it to object
+        console.log(data.followers)
+    }
+  }
+  
+  xhr.send()
+</script>
+</html>
