@@ -7,8 +7,9 @@ let accountState;
 
 // accountId= 2
 
-// now we will run the code
+// now we will run the cod
 // we get error as we tried changing value of a constant keyword o accountId=2 is not allowed it cant be changed because const keyword was used
+
 accountEmail = "hsjd@ga"
 accountCity="jaipur"
 accountPassword="154435"

@@ -1,4 +1,4 @@
-let score = true//let score = "33abc" //let score = "33" type= string it will be converted into number
+let score = 33//let score = "33abc" //let score = "33" type= string it will be converted into number
 console.log(typeof score)
 let valueInNumber = Number(score) //koi bhi data type ko aise class ke form mai use kr skte hain in js string ko bhi(first letter of datatype/class will always be capital)
 console.log(valueInNumber) //output=>NaN not a number

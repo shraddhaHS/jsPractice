@@ -39,7 +39,7 @@
 //point to be noted my lord: javascript is dynamically typed language variables ka type defined krte agr krna hota for safety toh woh statically typed ho jata
 const score= 100
 const scoreValue= 100.3 //yeh bhi number hai kutch float etc nhi hota js mai
-const outsideTemp = null // dattaype of outsideTemp is object
+const outsideTemp = null // datatype of outsideTemp is object
 console.log(typeof outsideTemp) 
 const isLoggedIn= false
 let userEmail; //undefined
