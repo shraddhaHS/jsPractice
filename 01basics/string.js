@@ -2,10 +2,10 @@ const name = "shraddha"
 const repoCount = "19"
 // console.log(name + repoCount + " Value") avoid using such syntax
 // console.log(`Hello my name is ${name} and my repo count is ${repoCount}`)
-//this is called string interpolation we use backticks and this syntax i more readable nd is widely used nowadays
+//🏮this is called string interpolation we use backticks and this syntax is more readable nd is widely used nowadays
 //string declaration 
-const gameName = new String("hitesh")
-// so output would be a string princessnura and we will get key value pairs of each letter starting at position 0 ...its not like array array is a data structure whereas string is just an object
+const gameName = new String("princessnura")
+// so output would be a string princessnura and we will get key value pairs of each letter starting at position 0 ...it's not like array, array is a data structure whereas string is just an object
 // console.log(typeof gameName) => we get object as output 
 // console.log(gameName[2]) //=> output i
 // console.log(gameName.length)

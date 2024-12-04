@@ -14,7 +14,7 @@ let timestamp = Date.now() //will give value from 1st jan 1970 in milliseconds
 // console.log(myCreatedDate.getTime())//will give value from 1st jan 1970 in milliseconds
 let newDate = new Date('05-19-2024')
 // console.log(newDate.getDay())
-//tolocalestring onject so we can have many optionss default for international stnadard
+//tolocalestring onject so we can have many optionss default for international standard
 // newDate.toLocaleString('default',{
 //     weekday:"long"
 

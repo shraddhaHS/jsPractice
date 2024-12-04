@@ -3,9 +3,9 @@
 // // console.log(3+3); console.log("shraddha") dont write your code like this make it readable use next line
 //  let name = "shraddha" //string ""
 //  let age= 21 //number range(2^53) bigInt
-// let isLoggenIn = false //boolean datatype
+// let isLoggedIn = false //boolean datatype
 
-//null => standalone value and it is a object in js/ representation of empty value
+//null => standalone value and it is a object in js representation of empty value
 //undefined =>variable declare kia h pr usko koi value nhi di
 //symbol=> unique
 
@@ -29,16 +29,25 @@
 
 //IMPORTANT
 // strict check === sirf values nhi unke datatype ko bhi check krta hai
-// console.log("2"===2) //will give false as output bcoz datatype is different
+// console.log("2"===2) //will give false as output because its datatype is different
 
 // DATATYPES SUMMARIZATION
 // primitive datatypes(7): call by value not by reference (value ki copy ke saath deal krte h na ki address)
 //String,Number,Boolean,Null,undefined,Symbol, BigInt
 
 
-//point to be noted my lord: javascript is dynamically typed language variables ka type defined krte agr krna hota for safety toh woh statically typed ho jata
+// **Point to be noted**:
+// 🎀JavaScript is a Dynamically typed language🎀
+// 💡In dynamically typed languages like JavaScript, you don't need to specify the data type when declaring a variable. 🏷️
+// 💡A language is called statically typed when you must explicitly declare the data type of a variable when assigning a value to it. 
+// For example, languages like Java or C++ are statically typed. 💻
+// 💡In JavaScript, the type of a variable is determined at runtime and can even change during execution. 
+// So, variables in JS are flexible and can hold different types of data at different times! 🌱
+
+
+
 const score= 100
-const scoreValue= 100.3 //yeh bhi number hai kutch float etc nhi hota js mai
+const scoreValue = 100.3; // This is also a number. In JavaScript, there’s no separate type for float or integer – both are treated as numbers.
 const outsideTemp = null // datatype of outsideTemp is object
 console.log(typeof outsideTemp) 
 const isLoggedIn= false
@@ -47,12 +56,12 @@ let userEmail; //undefined
 const id = Symbol('123')
 const anotherId = Symbol('123')
 console.log(id===anotherId)
-//symbol aisa datatype hai jo value ko unique bna deta hai even if value apparently same ho pr symbol ki help se they will be different nd unique
+// A symbol is a datatype that makes a value unique, even if the value appears to be the same. With the help of symbols, two values that look identical will be treated as different and unique.
+
 const bigNumber = 2345678984567789n
 // console.log(typeof bigNumber) ->bigInt
 
-//Non-primitive : reference (memory mai reference allocate kia jata hai)
-
+// 🐱‍🏍 Non-primitive: Reference (A reference is allocated in memory)
 //array,Objects,Functions 
 
 const heros = ["shaktiman","spideyboy","eren"] //array 
