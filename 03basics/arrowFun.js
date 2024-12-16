@@ -2,7 +2,7 @@ const user = {
     username:"sam",
     price:999,
     welcomeMessage : function(){
-      console.log(`${this.username}, welcome to website`)  //this use kia h instead of just userame because current context mai dekh rhe hain 
+      console.log(`${this.username}, welcome to website`)  //this use kia h instead of just  username because current context mai dekh rhe hain 
      console.log(this)
     }
 }
@@ -13,7 +13,7 @@ const user = {
 // console.log(this) //empty as node pe run ho rha h browser mai window aata output
 
 // function chai(){
-//     let username = "anuv"
+//     let username = "rahul"
 //     console.log(this.username) // (undefined)yahaan access nhi rkpaenge using this.username bs jb function ke andar object mai hi kr skte hain function mai nhi
 // }
 // chai()
