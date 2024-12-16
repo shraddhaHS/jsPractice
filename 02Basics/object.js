@@ -1,38 +1,78 @@
- //object literals
-//  jsuser is an object
+// ✨ OBJECT LITERALS IN JAVASCRIPT ✨
 
- const mySym = Symbol("key1")
- const JsUser = {
-    name:'shradha',
-    "full name":"shradha singh", //this cant be accesses using jsuser.___ method
-    age:18,
-    [mySym]: "mykey1", //symbol ka syntax
-    location:'rome',
-    lastLoginDays:["monday","saturday"],
-    email:"ssb@gmail.com"
+// 📝 What are Object Literals?
+// An object literal is a way to define an object in JavaScript using key-value pairs. 
+// It allows us to store properties and methods for easy data organization.
 
+// 🎉 Example of an Object Literal:
+const mySym = Symbol("key1"); // Symbol creates a unique key.
 
- }
+const JsUser = {
+  name: "Shraddha", // Simple key-value pair
+  "full name": "Shraddha Singh", //This cant be accesses using jsuser.___ method, Key with a space (needs [] bracket notation for access)
+  age: 18, // Numeric value
+  [mySym]: "mykey1", // Symbol key with computed property syntax
+  location: "Rome", // Another string key-value
+  lastLoginDays: ["Monday", "Saturday"], // Array as a value
+  email: "ssb@gmail.com", // Email as a string
+};
 
- //how to ACCESs
-//  console.log(JsUser.email) //not right way pr most of the time yahi use krenge
-//  console.log(JsUser["email"]) //better way
-//  console.log(JsUser["full name"]) //yeh better h full name ke liye yahi work krega . krke krenge toh hoga nhi 
-// console.log(JsUser[mySym])
-// console.log(typeof JsUser[mySym])
+// 🔍 HOW TO ACCESS OBJECT PROPERTIES 🔍
 
-JsUser.email = "shradha@gmail.com" //override value
-// Object.freeze(JsUser) //so that no one can change its value
-JsUser.email = "xyzzzzz@gmail.com" //now we cant change it will show value of email before we freezed
-// console.log(JsUser)
+// 1️⃣ Accessing using Dot Notation
+console.log(JsUser.email); 
+// Output: ssb@gmail.com 
+// ⚠️ This method works but isn't ideal for all keys.
 
-JsUser.greeting = function(){
-    console.log("hello Js user")
-}
-JsUser.greeting = function(){
-    console.log("hello Js user")
-}
-JsUser.greeting2 = function(){
-    console.log(`hello js user, ${this.name}`)
-}
-console.log(JsUser.greeting2())
+// 2️⃣ Accessing using Bracket Notation
+console.log(JsUser["email"]); 
+// Output: ssb@gmail.com
+// ✅ Bracket notation is more flexible and works with all keys.
+
+console.log(JsUser["full name"]); 
+// Output: Shraddha Singh
+// ⚠️ For keys like "full name" (containing spaces), dot notation won't work. Use bracket notation instead.
+
+// 3️⃣ Accessing a Symbol Key
+console.log(JsUser[mySym]); 
+// Output: mykey1
+
+// 4️⃣ Checking the Type of a Symbol Key Value
+console.log(typeof JsUser[mySym]); 
+// Output: string
+
+// 🌟 MODIFYING OBJECT PROPERTIES 🌟
+
+// ✅ Updating a property value
+JsUser.email = "shradha@gmail.com"; // Overriding the email value
+console.log(JsUser.email); 
+// Output: shradha@gmail.com
+
+// ❄️ Freezing the object to make it immutable:
+Object.freeze(JsUser); // Prevents further modifications
+JsUser.email = "xyzzzzz@gmail.com"; // This won't work because the object is frozen.
+console.log(JsUser.email); 
+// Output: shradha@gmail.com (unchanged)
+
+// 🎉 ADDING METHODS TO THE OBJECT 🎉
+
+// Adding a method to print a greeting
+JsUser.greeting = function () {
+  console.log("Hello JS user");
+};
+JsUser.greeting(); 
+// Output: Hello JS user
+
+// Adding another method with the `this` keyword to access object properties
+JsUser.greeting2 = function () {
+  console.log(`Hello JS user, ${this.name}`);
+};
+JsUser.greeting2(); 
+// Output: Hello JS user, Shraddha
+
+// 🌟 FINAL NOTES:
+// - Use **dot notation** for simple keys like `name` or `email`.
+// - Use **bracket notation** for keys with spaces or special characters, like `"full name"`.
+// - Freezing an object with `Object.freeze()` ensures it cannot be modified further.
+// - The `this` keyword inside a method refers to the object itself, allowing access to its properties.
+
