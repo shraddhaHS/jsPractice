@@ -17,3 +17,21 @@ let someNumber = 33
 let stringNumber = String(someNumber)
 console.log(stringNumber)
 console.log(typeof stringNumber)
+
+//🔮ParseInt🎀 
+
+// The parseInt method parses a value as a string and returns the first integer.
+// If the first character cannot be converted, NaN is returned.
+// Leading and trailing spaces are ignored and First character (if it's an integer) is returned.
+
+// Only the first integer found is returned.
+// parseInt("10");OUTPUT= 10
+// parseInt("10.00"); OUTPUT= 10
+// parseInt("10.33"); OUTPUT= 10
+// parseInt("34 45 66");OUTPUT= 34
+// parseInt(" 60 ");  OUTPUT= 60
+// parseInt("40 years"); OUTPUT= 40
+// parseInt("He was 40"); OUTPUT= NaN
+// 🎃parseInt("10+2");  OUTPUT = 10
+// parseInt("7FM");  OUTPUT= 7
+// 🎃parseInt("M7F");  OUTPUT= NaN
