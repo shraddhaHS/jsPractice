@@ -12,25 +12,25 @@
 // }
 
 // MAPS key value pairs ka collection
-const map = new Map()
-map.set('IN', "india")
-map.set('USA', "United states of america")
-map.set('NL', "netherland")
-// map.set('NL', "netherland")  it wont get repeated as map has unique values in the same order 
+// const map = new Map()
+// map.set('IN', "india")
+// map.set('USA', "United states of america")
+// map.set('NL', "netherland")
+// // map.set('NL', "netherland")  it wont get repeated as map has unique values in the same order 
 
-// console.log(map)
-//looping in map
-for(const [key,value] of map){
-console.log(key,":-",value) //isse key aur value ko separately extract krpaenge
-    // console.log(key) //isse pura array form mai aa jaega key value
-}
+// // console.log(map)
+// //looping in map
+// for(const [key,value] of map){
+// // console.log(key,":-",value) //isse key aur value ko separately extract krpaenge
+//     console.log(key) //isse pura array form mai aa jaega key value
+// }
  
 
-// with obbjects forof wont work to iterate
-// const myObj = {
-//     "game1": "NFS",
-//     "game2":"GTA"
-// }
-// for (const [key,value] of myObj) {
-//     console.log(key,":-", value) //myObj is not iterable
-// }
+// with objects forof wont work to iterate
+const myObj = {
+    "game1": "NFS",
+    "game2":"GTA"
+}
+for (const [key,value] of myObj) {
+    console.log(key,":-", value) //myObj is not iterable
+}

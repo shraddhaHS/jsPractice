@@ -8,7 +8,7 @@ const coding = ["js","rb","c++","python","java"]
 // coding.forEach( (item) => { console.log(item)}  ) 
 
 // function printMe(item){
-//     console.log(item)
+//     console.log(item )
 // }
 // //using this function as callback
 // coding.forEach(printMe)
@@ -40,5 +40,5 @@ const myCoding = [
 
 myCoding.forEach((item)=>{
     console.log(item.languageName)
-    // console.log(item.filename)
+    console.log(item.filename)
 })
