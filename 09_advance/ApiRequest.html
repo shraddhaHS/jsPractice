@@ -6,11 +6,13 @@
     <title>Document</title>
 </head>
 <body style="background-color: #212121;">
-<!-- 0	UNSENT	Client has been created. open() not called yet.
+<!-- states of xhr
+0	UNSENT	Client has been created. open() not called yet.
 1	OPENED	open() has been called.
 2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
 3	LOADING	Downloading; responseText holds partial data.
-4	DONE	The operation is complete. -->
+4	DONE	The operation is complete.
+ -->
 </body>
 <script>
   //ajax/xml
@@ -21,7 +23,7 @@ const requestUrl = "https://api.github.com/users/hiteshchoudhary"
   xhr.onreadystatechange = function(){
     console.log(xhr.readyState)
     if(xhr.readyState === 4){
-        //JSON . parse is used to convert string into objects just like we use to do it in js by uing Number or Object
+        //JSON . parse is used to convert string into objects just like we use to do it in js by using Number or Object
         const data = JSON.parse(this.responseText)
         console.log(typeof data)//datatype of data is string so we will get undefined as output when we try to run the code below.. but we will convert it to object
         console.log(data.followers)
